@@ -259,46 +259,46 @@ export function About() {
                 </div>
 
                 {/* Add the highlights section below as a separate section */}
-                <div className="mb-12 sm:mb-20">
-                    <div
-                        className={`text-center mb-8 sm:mb-12 transition-all duration-1000 ${
-                            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-                        }`}
-                    >
-                        <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-foreground">Technical Expertise</h3>
-                        <p className="text-muted-foreground max-w-2xl mx-auto">
-                            Core technologies and methodologies I use to build robust backend systems
-                        </p>
-                    </div>
+                {/*<div className="mb-12 sm:mb-20">*/}
+                {/*    <div*/}
+                {/*        className={`text-center mb-8 sm:mb-12 transition-all duration-1000 ${*/}
+                {/*            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"*/}
+                {/*        }`}*/}
+                {/*    >*/}
+                {/*        <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-foreground">Technical Expertise</h3>*/}
+                {/*        <p className="text-muted-foreground max-w-2xl mx-auto">*/}
+                {/*            Core technologies and methodologies I use to build robust backend systems*/}
+                {/*        </p>*/}
+                {/*    </div>*/}
 
-                    <div
-                        className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 transition-all duration-1000 ${
-                            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-                        }`}
-                    >
-                        {highlights.map((highlight, index) => (
-                            <Card
-                                key={index}
-                                className={`group hover:shadow-xl transition-all transform hover:scale-105 hover:-rotate-1 cursor-pointer border-0 glass-effect-strong neon-border ${highlight.glowColor} bounce-in`}
-                                style={{animationDelay: `${0.7 + index * 0.1}s`}}
-                            >
-                                <CardContent className="p-4 sm:p-6 text-center relative">
-                                    <div
-                                        className="absolute -inset-1 bg-gradient-to-br from-primary/5 to-secondary/5 blur-lg opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                                    <div
-                                        className={`w-12 h-12 sm:w-14 sm:h-14 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform relative z-10 shadow-lg ${highlight.glowColor} pulse-glow`}
-                                    >
-                                        <highlight.icon className={`h-6 w-6 sm:h-7 sm:w-7 ${highlight.color}`}/>
-                                    </div>
-                                    <h4 className="font-bold mb-2 text-foreground group-hover:text-primary transition-colors relative z-10 text-base sm:text-lg">
-                                        {highlight.title}
-                                    </h4>
-                                    <p className="text-sm text-muted-foreground leading-relaxed relative z-10">{highlight.description}</p>
-                                </CardContent>
-                            </Card>
-                        ))}
-                    </div>
-                </div>
+                {/*    <div*/}
+                {/*        className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 transition-all duration-1000 ${*/}
+                {/*            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"*/}
+                {/*        }`}*/}
+                {/*    >*/}
+                {/*        {highlights.map((highlight, index) => (*/}
+                {/*            <Card*/}
+                {/*                key={index}*/}
+                {/*                className={`group hover:shadow-xl transition-all transform hover:scale-105 hover:-rotate-1 cursor-pointer border-0 glass-effect-strong neon-border ${highlight.glowColor} bounce-in`}*/}
+                {/*                style={{animationDelay: `${0.7 + index * 0.1}s`}}*/}
+                {/*            >*/}
+                {/*                <CardContent className="p-4 sm:p-6 text-center relative">*/}
+                {/*                    <div*/}
+                {/*                        className="absolute -inset-1 bg-gradient-to-br from-primary/5 to-secondary/5 blur-lg opacity-0 group-hover:opacity-100 transition-opacity"></div>*/}
+                {/*                    <div*/}
+                {/*                        className={`w-12 h-12 sm:w-14 sm:h-14 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform relative z-10 shadow-lg ${highlight.glowColor} pulse-glow`}*/}
+                {/*                    >*/}
+                {/*                        <highlight.icon className={`h-6 w-6 sm:h-7 sm:w-7 ${highlight.color}`}/>*/}
+                {/*                    </div>*/}
+                {/*                    <h4 className="font-bold mb-2 text-foreground group-hover:text-primary transition-colors relative z-10 text-base sm:text-lg">*/}
+                {/*                        {highlight.title}*/}
+                {/*                    </h4>*/}
+                {/*                    <p className="text-sm text-muted-foreground leading-relaxed relative z-10">{highlight.description}</p>*/}
+                {/*                </CardContent>*/}
+                {/*            </Card>*/}
+                {/*        ))}*/}
+                {/*    </div>*/}
+                {/*</div>*/}
             </div>
         </section>
     )
