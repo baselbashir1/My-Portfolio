@@ -9,7 +9,7 @@ export function Hero() {
     const [currentText, setCurrentText] = useState("")
     const [currentIndex, setCurrentIndex] = useState(0)
 
-    const texts = ["Spring Boot Developer", "Microservices Architect", "Java Expert", "Backend Engineer"]
+    const texts = ["Spring Boot Developer", "Microservices Architect", "Java Developer", "Backend Engineer"]
 
     useEffect(() => {
         const interval = setInterval(() => {

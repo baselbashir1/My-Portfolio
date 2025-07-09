@@ -65,7 +65,7 @@ export function Projects() {
             longDescription:
                 "A family-owned, full-service kitchen and bath business in custom cabinetry. Specialize in tailored solutions for residential & commercial projects.",
             technologies: ["SEO", "WordPress", "SEMrush", "PageSpeed Insights", "Google Search Console", "Google Analytics", "Yoast SEO", "MySQL"],
-            github: "https://github.com",
+            github: "https://github.com/baselbashir1",
             demo: "https://kabinetry.ca/",
             image: "/images/kabinetry.png",
             stats: {stars: 4, forks: 0, watchers: 7},
@@ -258,7 +258,7 @@ export function Projects() {
                                         >
                                             <Link href={project.demo}>
                                                 <ExternalLink className="mr-2 h-4 w-4"/>
-                                                Demo
+                                                Visit
                                             </Link>
                                         </Button>
                                     )}

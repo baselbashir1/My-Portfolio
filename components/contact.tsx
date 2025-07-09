@@ -64,8 +64,7 @@ export function Contact() {
                         Let's Work Together
                     </h2>
                     <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto px-2 sm:px-0">
-                        Ready to discuss your next project? I'd love to hear from you and explore how we can work
-                        together.
+                        Ready to discuss your next project?
                     </p>
                 </div>
 

@@ -41,8 +41,6 @@ export function Experience() {
                 "Collaborated with cross-functional teams to gather requirements and deliver software solutions that meet business needs.",
                 "Worked on database design, development, and optimization to ensure data integrity and performance.",
                 "Managed the deployment and configuration of applications in production environments.",
-                "Monitored and resolved technical issues to maintain system stability and performance.",
-                "Contributed to the continuous improvement of development processes and best practices within the team.",
             ],
             technologies: ["Java", "Spring Boot", "Microservices", "RabbitMQ", "Docker", "Kubernetes", "GitLab", "CI/CD", "Redis", "Grafana", "Promethus", "Oracle Database", "Sonarqube", "Git", "Firebase"],
         },
@@ -61,7 +59,6 @@ export function Experience() {
                 "Database developments and enhancements.",
                 "Managing the deployment process for all new systems or new releases of existing ones.",
                 "Initializing the production environment and implementing all necessary configurations on databases and servers.",
-                "Identifying and resolving technical issues.",
             ],
             technologies: ["DevOps", "Docker", "Java", "PHP", "Git", "Sonarqube", "RabbitMQ", "Oracle Database", "SQL Server", "MySQl"],
         },
@@ -106,8 +103,8 @@ export function Experience() {
             description:
                 "Developed new applications using PHP and Laravel framework.",
             achievements: [
-                "Qondos: Developed an application enabling clients to request home maintenance services and set their location to find the nearest service. The application supports multi-authentication for clients and maintenance personnel and includes an admin dashboard for managing requests and users.",
-                "Glasses Store: Created a dashboard for registering and managing client files, including details of their purchase history. The system streamlines client management and enhances customer service capabilities.",
+                "Developed an application enabling clients to request home maintenance services and set their location to find the nearest service. The application supports multi-authentication for clients and maintenance personnel and includes an admin dashboard for managing requests and users.",
+                "Created a dashboard for registering and managing client files, including details of their purchase history. The system streamlines client management and enhances customer service capabilities.",
             ],
             technologies: ["Laravel", "REST APIs", "MVC", "PHP", "JavaScript", "Bootstrap", "Firebase", "Git", "MySQL"],
         },
@@ -131,7 +128,7 @@ export function Experience() {
                         Work Experience
                     </h2>
                     <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto px-2 sm:px-0">
-                        My professional journey in backend development and microservices architecture
+                        My career journey in software engineering
                     </p>
                 </div>
 
