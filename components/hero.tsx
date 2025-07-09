@@ -163,22 +163,34 @@ export function Hero() {
                     {/* Enhanced action buttons */}
                     <div
                         className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-8 sm:mb-12 px-4 sm:px-0 scale-in"
-                        style={{animationDelay: "1.1s"}}
-                    >
-                        <Button
-                            size="lg"
-                            className="group relative overflow-hidden spring-gradient hover:shadow-2xl hover:shadow-primary/25 transition-all transform hover:scale-105 neon-border w-full sm:w-auto pulse-glow"
-                        >
-                            <div
-                                className="absolute inset-0 bg-white/10 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
-                            <Mail className="mr-2 h-4 w-4 sm:h-5 sm:w-5 relative z-10 group-hover:animate-bounce"/>
-                            <span className="relative z-10">Let's Connect</span>
-                        </Button>
+                        style={{animationDelay: "1.1s"}}>
 
+                        {/* Contact Button - Email Version */}
+                        <a href="mailto:eng.baselbashir@gmail.com" className="w-full sm:w-auto no-underline">
+                            <Button
+                                size="lg"
+                                className="group relative overflow-hidden spring-gradient hover:shadow-2xl hover:shadow-primary/25 transition-all transform hover:scale-105 neon-border w-full sm:w-auto pulse-glow"
+                            >
+                                <div
+                                    className="absolute inset-0 bg-white/10 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+                                <Mail className="mr-2 h-4 w-4 sm:h-5 sm:w-5 relative z-10 group-hover:animate-bounce"/>
+                                <span className="relative z-10">Let's Connect</span>
+                            </Button>
+                        </a>
+
+                        {/* Download CV Button */}
                         <Button
                             variant="outline"
                             size="lg"
                             className="group border-primary text-primary hover:bg-primary hover:text-black transition-all duration-300 transform hover:scale-105 glow-effect bg-transparent neon-border w-full sm:w-auto"
+                            onClick={() => {
+                                const link = document.createElement('a');
+                                link.href = '/files/resume.pdf';
+                                link.download = 'mhd_basel_bashir_resume.pdf';
+                                document.body.appendChild(link);
+                                link.click();
+                                document.body.removeChild(link);
+                            }}
                         >
                             <Download className="mr-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:animate-bounce"/>
                             Download Resume
