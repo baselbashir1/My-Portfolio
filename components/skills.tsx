@@ -34,16 +34,7 @@ export function Skills() {
         {
             title: "Microservices & Architecture",
             icon: "🏗️",
-            skills: [
-                "Microservices Design",
-                "RESTful APIs",
-                "GraphQL",
-                "Event-Driven Architecture",
-                "API Gateway",
-                "Keycloak",
-                "Zookeeper",
-                "Zipkin"
-            ],
+            skills: ["Microservices Design", "RESTful APIs", "GraphQL", "Event-Driven Architecture", "API Gateway", "Keycloak", "Zookeeper", "Zipkin"],
         },
         {
             title: "Databases & Storage",

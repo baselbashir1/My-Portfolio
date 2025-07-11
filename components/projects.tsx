@@ -38,12 +38,13 @@ export function Projects() {
                 "A medical website in partnership with Wareed, providing users with an intuitive platform to view and search for doctors, book appointments within specified timeframes, and access additional services. A dedicated dashboard allows doctors to manage appointments and other essential controls.",
             technologies: ["Laravel", "Vue.js", "PHP", "JavaScript", "Bootstrap", "Git", "MySQL"],
             github: "https://github.com/baselbashir1",
-            demo: "https://wareed.sy",
+            url: "https://wareed.sy",
             image: "/images/wareed.png",
             stats: {stars: 5, forks: 0, watchers: 10},
             status: "Production",
             category: "Full Stack",
             featured: true,
+            buttonText: "Visit"
         },
         {
             title: "Buhothy",
@@ -53,12 +54,42 @@ export function Projects() {
                 "A user-friendly website tailored for Gulf students, enabling them to order educational research based on specific requests. The platform includes a payment system for processing orders and an admin dashboard for managing user interactions and content.",
             technologies: ["Laravel", "MVC", "PHP", "JavaScript", "Bootstrap", "Git", "Stripe", "MySQL"],
             github: "https://github.com/baselbashir1/Bhoothat-Website",
-            demo: "https://buhothy.com/en",
+            url: "https://buhothy.com/en",
             image: "/images/buhothy.png",
             stats: {stars: 3, forks: 0, watchers: 10},
             status: "Production",
             category: "Full Stack",
             featured: true,
+            buttonText: "Visit"
+        },
+        {
+            title: "Akrab Elik Mobile Application",
+            description:
+                "A mobile application that provides real-time support, enables activation and cancellation of services, bundles, and offers (minutes and internet), delivers customer usage insights, facilitates payments via Syriatel Cash, and allows users to register complaints (e.g., coverage issues). It is complemented by a web-based control panel that empowers the marketing team to efficiently manage services, monitor customer activity, and enhance engagement.",
+            longDescription:
+                "A mobile application that provides real-time support, enables activation and cancellation of services, bundles, and offers (minutes and internet), delivers customer usage insights, facilitates payments via Syriatel Cash, and allows users to register complaints (e.g., coverage issues). It is complemented by a web-based control panel that empowers the marketing team to efficiently manage services, monitor customer activity, and enhance engagement.",
+            technologies: ["Spring Boot", "Java", "Microservices", "RabbitMQ", "Redis", "Docker", "Kubernetes", "GitLab CI/CD", "Grafana", "Promethus", ".NET Framework", "PLSQL", "Oracle Database"],
+            url: "https://wservices.syriatel.sy/AAE",
+            image: "",
+            stats: {stars: 5, forks: 0, watchers: 10},
+            status: "Production",
+            category: "Back End",
+            featured: true,
+            buttonText: "Download App"
+        },
+        {
+            title: "Bulk Messaging System - BMS",
+            description:
+                "A messaging platform that enables companies and third parties to send SMS messages to their customers through BMS. It serves media companies, universities, financial institutions, and brands, helping them streamline communication, outreach, and customer engagement.",
+            longDescription:
+                "A messaging platform that enables companies and third parties to send SMS messages to their customers through BMS. It serves media companies, universities, financial institutions, and brands, helping them streamline communication, outreach, and customer engagement.",
+            technologies: ["Spring Boot", "Java", "Microservices", "RabbitMQ", "Docker", "PLSQL", "Oracle Database"],
+            image: "/images/bms.png",
+            stats: {stars: 5, forks: 0, watchers: 10},
+            status: "Production",
+            category: "Back End",
+            featured: true,
+            buttonText: "Visit"
         },
         {
             title: "Kabinetry",
@@ -67,13 +98,13 @@ export function Projects() {
             longDescription:
                 "A family-owned, full-service kitchen and bath business in custom cabinetry. Specialize in tailored solutions for residential & commercial projects.",
             technologies: ["SEO", "WordPress", "SEMrush", "PageSpeed Insights", "Google Search Console", "Google Analytics", "Yoast SEO", "MySQL"],
-            github: "https://github.com/baselbashir1",
-            demo: "https://kabinetry.ca/",
+            url: "https://kabinetry.ca/",
             image: "/images/kabinetry.png",
             stats: {stars: 4, forks: 0, watchers: 7},
             status: "Production",
             category: "SEO",
             featured: true,
+            buttonText: "Visit"
         },
         {
             title: "QONDOS",
@@ -83,12 +114,13 @@ export function Projects() {
                 "An application for maintenance technicians that enables clients to request specific home maintenance services, this project contains RESTful APIs built using PHP Laravel which provides multi-authentication using Laravel Passport tokens to specify the user's authenticated type and you can set your location to request the nearest maintenance.",
             technologies: ["Laravel", "REST APIs", "MVC", "PHP", "JavaScript", "Bootstrap", "Firebase", "Git", "MySQL"],
             github: "https://github.com/baselbashir1/QONDOS",
-            demo: "https://www.goldensoft.online/project-details/22",
+            url: "https://www.goldensoft.online/project-details/22",
             image: "/images/qondos.png",
             stats: {stars: 0, forks: 0, watchers: 0},
             status: "Test",
             category: "Back End",
             featured: true,
+            buttonText: "Demo"
         },
         {
             title: "E-commerce System with Microservices Architecture",
@@ -102,7 +134,8 @@ export function Projects() {
             stats: {stars: 0, forks: 0, watchers: 0},
             status: "Test",
             category: "Back End",
-            featured: true,
+            featured: false,
+            buttonText: "Demo"
         },
         {
             title: "HyperX Store",
@@ -116,7 +149,8 @@ export function Projects() {
             stats: {stars: 0, forks: 0, watchers: 0},
             status: "Test",
             category: "Full Stack",
-            featured: true,
+            featured: false,
+            buttonText: "Demo"
         },
     ]
 
@@ -191,24 +225,24 @@ export function Projects() {
                                     </div>
 
                                     {/* GitHub stats */}
-                                    <div
-                                        className="absolute bottom-4 left-4 flex gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                        <div
-                                            className="flex items-center gap-1 text-white text-sm glass-effect px-2 py-1 rounded">
-                                            <Star className="h-4 w-4 text-yellow-400"/>
-                                            {project.stats.stars}
-                                        </div>
-                                        <div
-                                            className="flex items-center gap-1 text-white text-sm glass-effect px-2 py-1 rounded">
-                                            <GitFork className="h-4 w-4 text-blue-400"/>
-                                            {project.stats.forks}
-                                        </div>
-                                        <div
-                                            className="flex items-center gap-1 text-white text-sm glass-effect px-2 py-1 rounded">
-                                            <Eye className="h-4 w-4 text-green-400"/>
-                                            {project.stats.watchers}
-                                        </div>
-                                    </div>
+                                    {/*<div*/}
+                                    {/*    className="absolute bottom-4 left-4 flex gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">*/}
+                                    {/*    <div*/}
+                                    {/*        className="flex items-center gap-1 text-white text-sm glass-effect px-2 py-1 rounded">*/}
+                                    {/*        <Star className="h-4 w-4 text-yellow-400"/>*/}
+                                    {/*        {project.stats.stars}*/}
+                                    {/*    </div>*/}
+                                    {/*    <div*/}
+                                    {/*        className="flex items-center gap-1 text-white text-sm glass-effect px-2 py-1 rounded">*/}
+                                    {/*        <GitFork className="h-4 w-4 text-blue-400"/>*/}
+                                    {/*        {project.stats.forks}*/}
+                                    {/*    </div>*/}
+                                    {/*    <div*/}
+                                    {/*        className="flex items-center gap-1 text-white text-sm glass-effect px-2 py-1 rounded">*/}
+                                    {/*        <Eye className="h-4 w-4 text-green-400"/>*/}
+                                    {/*        {project.stats.watchers}*/}
+                                    {/*    </div>*/}
+                                    {/*</div>*/}
                                 </div>
                             </div>
 
@@ -238,26 +272,31 @@ export function Projects() {
                                 </div>
 
                                 <div className="flex gap-4">
-                                    <Button
-                                        variant="outline"
-                                        size="sm"
-                                        asChild
-                                        className="group/btn glass-effect neon-border hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 bg-transparent"
-                                    >
-                                        <Link href={project.github}>
-                                            <Github className="mr-2 h-4 w-4 group-hover/btn:animate-spin"/>
-                                            Code
-                                        </Link>
-                                    </Button>
-                                    {project.demo && (
+                                    {/* Conditionally show GitHub button */}
+                                    {project.github && (
+                                        <Button
+                                            variant="outline"
+                                            size="sm"
+                                            asChild
+                                            className="group/btn glass-effect neon-border hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 bg-transparent"
+                                        >
+                                            <Link href={project.github}>
+                                                <Github className="mr-2 h-4 w-4 group-hover/btn:animate-spin"/>
+                                                Code
+                                            </Link>
+                                        </Button>
+                                    )}
+
+                                    {/* Existing url button */}
+                                    {project.url && (
                                         <Button
                                             size="sm"
                                             asChild
                                             className="spring-gradient hover:shadow-lg hover:shadow-primary/25 transition-all duration-300"
                                         >
-                                            <Link href={project.demo}>
-                                                <ExternalLink className="mr-2 h-4 w-4"/>
-                                                Demo
+                                            <Link href={project.url}>
+                                                {/*<ExternalLink className="mr-2 h-4 w-4"/>*/}
+                                                {project.buttonText}
                                             </Link>
                                         </Button>
                                     )}

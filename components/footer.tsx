@@ -42,7 +42,7 @@ export function Footer() {
 
                 <div
                     className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-primary/20 text-center text-muted-foreground text-sm">
-                    <p>&copy; 2025 Mhd Basel Bashir. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Mhd Basel Bashir. All rights reserved.</p>
                 </div>
             </div>
         </footer>
