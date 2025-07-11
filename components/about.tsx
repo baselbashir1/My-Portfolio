@@ -102,9 +102,9 @@ export function About() {
                         <div
                             className="absolute -inset-2 bg-gradient-to-r from-primary/10 to-secondary/10 blur-xl opacity-50 animate-pulse"></div>
                     </h2>
-                    <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
-                        Building the invisible infrastructure that powers modern applications
-                    </p>
+                    {/*<p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">*/}
+                    {/*    Building the invisible infrastructure that powers modern applications*/}
+                    {/*</p>*/}
                 </div>
 
                 <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center mb-12 sm:mb-20">
@@ -114,16 +114,16 @@ export function About() {
                             isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
                         }`}
                     >
-                        <h3
-                            className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-foreground slide-in-left"
-                            style={{animationDelay: "0.3s"}}
-                        >
-                            From Code to{" "}
-                            <span className="text-primary relative">
-                Architecture
-                <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-primary animate-pulse"></div>
-              </span>
-                        </h3>
+                        {/*          <h3*/}
+                        {/*              className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-foreground slide-in-left"*/}
+                        {/*              style={{animationDelay: "0.3s"}}*/}
+                        {/*          >*/}
+                        {/*              From Code to{" "}*/}
+                        {/*              <span className="text-primary relative">*/}
+                        {/*  Architecture*/}
+                        {/*  <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-primary animate-pulse"></div>*/}
+                        {/*</span>*/}
+                        {/*          </h3>*/}
                         <div className="space-y-4 sm:space-y-6 text-muted-foreground leading-relaxed">
                             <p className="text-base sm:text-lg fade-in-up" style={{animationDelay: "0.5s"}}>
                                 My journey began with a simple{" "}
@@ -222,22 +222,22 @@ export function About() {
                             </div>
 
                             {/* Enhanced professional badges */}
-                  {/*          <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 flex flex-col gap-2">*/}
-                  {/*              <div*/}
-                  {/*                  className="glass-effect border border-primary/30 px-4 py-2 rounded-full text-sm font-medium text-primary neon-border animate-pulse">*/}
-                  {/*<span className="flex items-center gap-2">*/}
-                  {/*  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>*/}
-                  {/*  Backend Specialist*/}
-                  {/*</span>*/}
-                  {/*              </div>*/}
-                  {/*              <div*/}
-                  {/*                  className="glass-effect border border-secondary/30 px-3 py-1 rounded-full text-xs font-medium text-secondary neon-border">*/}
-                  {/*<span className="flex items-center gap-2">*/}
-                  {/*  <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>*/}
-                  {/*  3+ Years Experience*/}
-                  {/*</span>*/}
-                  {/*              </div>*/}
-                  {/*          </div>*/}
+                            <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 flex flex-col gap-2">
+                                <div
+                                    className="glass-effect border border-primary/30 px-4 py-2 rounded-full text-sm font-medium text-primary neon-border animate-pulse">
+                  <span className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                    Backend Specialist
+                  </span>
+                                </div>
+                                {/*              <div*/}
+                                {/*                  className="glass-effect border border-secondary/30 px-3 py-1 rounded-full text-xs font-medium text-secondary neon-border">*/}
+                                {/*<span className="flex items-center gap-2">*/}
+                                {/*  <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>*/}
+                                {/*  3+ Years Experience*/}
+                                {/*</span>*/}
+                                {/*              </div>*/}
+                            </div>
 
                             {/* Code snippet floating element */}
                             {/*<div*/}
@@ -248,12 +248,12 @@ export function About() {
                             {/*</div>*/}
 
                             {/* Java icon floating element */}
-                            {/*<div*/}
-                            {/*    className="absolute -bottom-8 -right-8 glass-effect-strong border border-secondary/20 px-3 py-2 rounded-lg text-xs font-mono text-secondary neon-border opacity-80 group-hover:opacity-100 transition-opacity float-gentle"*/}
-                            {/*    style={{animationDelay: "1.5s"}}*/}
-                            {/*>*/}
-                            {/*    {"{ Java }"}*/}
-                            {/*</div>*/}
+                            <div
+                                className="absolute -bottom-8 -right-8 glass-effect-strong border border-secondary/20 px-3 py-2 rounded-lg text-xs font-mono text-secondary neon-border opacity-80 group-hover:opacity-100 transition-opacity float-gentle"
+                                style={{animationDelay: "1.5s"}}
+                            >
+                                {"{ Java }"}
+                            </div>
                         </div>
                     </div>
                 </div>

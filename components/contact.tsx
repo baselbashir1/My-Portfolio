@@ -1,6 +1,7 @@
 "use client"
 
 import type React from "react"
+
 import {useState} from "react"
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card"
 import {Button} from "@/components/ui/button"
@@ -19,6 +20,7 @@ export function Contact() {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault()
+        // Handle form submission here
         console.log("Form submitted:", formData)
     }
 
@@ -51,47 +53,37 @@ export function Contact() {
     ]
 
     return (
-        <section id="contact" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 relative">
+        <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/50">
             <div className="container mx-auto max-w-6xl">
-                <div className="text-center mb-12 sm:mb-16">
-                    <div className="inline-block mb-4">
-            <span
-                className="font-mono text-primary text-xs sm:text-sm glass-effect px-3 sm:px-4 py-2 rounded-full neon-border">
-              // Get In Touch
-            </span>
-                    </div>
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                        Let's Work Together
-                    </h2>
-                    <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto px-2 sm:px-0">
+                <div className="text-center mb-16">
+                    <h2 className="text-3xl sm:text-4xl font-bold mb-4">Get In Touch</h2>
+                    <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                         Ready to discuss your next project?
                     </p>
                 </div>
 
-                <div className="grid lg:grid-cols-2 gap-8 sm:gap-12">
+                <div className="grid lg:grid-cols-2 gap-12">
                     <div>
-                        <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">Let's Connect</h3>
-                        <p className="text-muted-foreground mb-6 sm:mb-8 text-sm sm:text-base">
+                        <h3 className="text-2xl font-semibold mb-6">Let's Connect</h3>
+                        <p className="text-muted-foreground mb-8">
                             I'm always interested in new opportunities and exciting projects. Whether you have a
                             question about my
                             work or want to discuss a potential collaboration, feel free to reach out.
                         </p>
 
-                        <div className="space-y-4 sm:space-y-6">
+                        <div className="space-y-6">
                             {contactInfo.map((info, index) => (
                                 <div key={index} className="flex items-center space-x-4">
                                     <div className="flex-shrink-0">
                                         <div
-                                            className="w-10 h-10 sm:w-12 sm:h-12 glass-effect neon-border rounded-lg flex items-center justify-center">
-                                            <info.icon className="h-5 w-5 sm:h-6 sm:w-6 text-primary"/>
+                                            className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                            <info.icon className="h-6 w-6 text-primary"/>
                                         </div>
                                     </div>
                                     <div>
-                                        <p className="font-medium text-sm sm:text-base">{info.label}</p>
-                                        <a
-                                            href={info.href}
-                                            className="text-muted-foreground hover:text-primary transition-colors text-sm sm:text-base break-all"
-                                        >
+                                        <p className="font-medium">{info.label}</p>
+                                        <a href={info.href}
+                                           className="text-muted-foreground hover:text-primary transition-colors">
                                             {info.value}
                                         </a>
                                     </div>
@@ -100,33 +92,22 @@ export function Contact() {
                         </div>
                     </div>
 
-                    <Card className="glass-effect neon-border border-0">
-                        <CardHeader className="p-4 sm:p-6">
-                            <CardTitle className="text-lg sm:text-xl">Send a Message</CardTitle>
-                            <CardDescription className="text-sm sm:text-base">
-                                Fill out the form below and I'll get back to you as soon as possible.
-                            </CardDescription>
+                    <Card>
+                        <CardHeader>
+                            <CardTitle>Send a Message</CardTitle>
+                            <CardDescription>Fill out the form below and I'll get back to you as soon as
+                                possible.</CardDescription>
                         </CardHeader>
-                        <CardContent className="p-4 sm:p-6 pt-0">
-                            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <CardContent>
+                            <form onSubmit={handleSubmit} className="space-y-6">
+                                <div className="grid sm:grid-cols-2 gap-4">
                                     <div className="space-y-2">
-                                        <Label htmlFor="name" className="text-sm">
-                                            Name
-                                        </Label>
-                                        <Input
-                                            id="name"
-                                            name="name"
-                                            value={formData.name}
-                                            onChange={handleChange}
-                                            required
-                                            className="glass-effect neon-border bg-transparent"
-                                        />
+                                        <Label htmlFor="name">Name</Label>
+                                        <Input id="name" name="name" value={formData.name} onChange={handleChange}
+                                               required/>
                                     </div>
                                     <div className="space-y-2">
-                                        <Label htmlFor="email" className="text-sm">
-                                            Email
-                                        </Label>
+                                        <Label htmlFor="email">Email</Label>
                                         <Input
                                             id="email"
                                             name="email"
@@ -134,27 +115,16 @@ export function Contact() {
                                             value={formData.email}
                                             onChange={handleChange}
                                             required
-                                            className="glass-effect neon-border bg-transparent"
                                         />
                                     </div>
                                 </div>
                                 <div className="space-y-2">
-                                    <Label htmlFor="subject" className="text-sm">
-                                        Subject
-                                    </Label>
-                                    <Input
-                                        id="subject"
-                                        name="subject"
-                                        value={formData.subject}
-                                        onChange={handleChange}
-                                        required
-                                        className="glass-effect neon-border bg-transparent"
-                                    />
+                                    <Label htmlFor="subject">Subject</Label>
+                                    <Input id="subject" name="subject" value={formData.subject} onChange={handleChange}
+                                           required/>
                                 </div>
                                 <div className="space-y-2">
-                                    <Label htmlFor="message" className="text-sm">
-                                        Message
-                                    </Label>
+                                    <Label htmlFor="message">Message</Label>
                                     <Textarea
                                         id="message"
                                         name="message"
@@ -162,10 +132,9 @@ export function Contact() {
                                         value={formData.message}
                                         onChange={handleChange}
                                         required
-                                        className="glass-effect neon-border bg-transparent resize-none"
                                     />
                                 </div>
-                                <Button type="submit" className="w-full spring-gradient">
+                                <Button type="submit" className="w-full">
                                     <Send className="mr-2 h-4 w-4"/>
                                     Send Message
                                 </Button>

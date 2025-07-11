@@ -43,6 +43,7 @@ export function Projects() {
             stats: {stars: 5, forks: 0, watchers: 10},
             status: "Production",
             category: "Full Stack",
+            featured: true,
         },
         {
             title: "Buhothy",
@@ -57,6 +58,7 @@ export function Projects() {
             stats: {stars: 3, forks: 0, watchers: 10},
             status: "Production",
             category: "Full Stack",
+            featured: true,
         },
         {
             title: "Kabinetry",
@@ -71,6 +73,7 @@ export function Projects() {
             stats: {stars: 4, forks: 0, watchers: 7},
             status: "Production",
             category: "SEO",
+            featured: true,
         },
         {
             title: "QONDOS",
@@ -80,10 +83,12 @@ export function Projects() {
                 "An application for maintenance technicians that enables clients to request specific home maintenance services, this project contains RESTful APIs built using PHP Laravel which provides multi-authentication using Laravel Passport tokens to specify the user's authenticated type and you can set your location to request the nearest maintenance.",
             technologies: ["Laravel", "REST APIs", "MVC", "PHP", "JavaScript", "Bootstrap", "Firebase", "Git", "MySQL"],
             github: "https://github.com/baselbashir1/QONDOS",
+            demo: "https://www.goldensoft.online/project-details/22",
             image: "/images/qondos.png",
             stats: {stars: 0, forks: 0, watchers: 0},
             status: "Test",
             category: "Back End",
+            featured: true,
         },
         {
             title: "E-commerce System with Microservices Architecture",
@@ -97,6 +102,7 @@ export function Projects() {
             stats: {stars: 0, forks: 0, watchers: 0},
             status: "Test",
             category: "Back End",
+            featured: true,
         },
         {
             title: "HyperX Store",
@@ -110,21 +116,20 @@ export function Projects() {
             stats: {stars: 0, forks: 0, watchers: 0},
             status: "Test",
             category: "Full Stack",
+            featured: true,
         },
     ]
 
+    const featuredProjects = projects.filter((p) => p.featured)
+
     return (
-        <section
-            ref={sectionRef}
-            id="projects"
-            className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
-        >
+        <section ref={sectionRef} id="projects" className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
             {/* Enhanced background effects */}
             <div className="absolute inset-0">
                 <div
-                    className="absolute top-20 right-20 w-60 h-60 sm:w-72 sm:h-72 bg-primary/10 rounded-full blur-3xl animate-pulse pulse-glow"></div>
+                    className="absolute top-20 right-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
                 <div
-                    className="absolute bottom-20 left-20 w-60 h-60 sm:w-72 sm:h-72 bg-secondary/10 rounded-full blur-3xl animate-pulse pulse-glow"
+                    className="absolute bottom-20 left-20 w-72 h-72 bg-secondary/10 rounded-full blur-3xl animate-pulse"
                     style={{animationDelay: "2s"}}
                 ></div>
                 <div className="absolute inset-0 matrix-bg opacity-5"></div>
@@ -132,35 +137,34 @@ export function Projects() {
 
             <div className="container mx-auto max-w-7xl relative z-10">
                 <div
-                    className={`text-center mb-12 sm:mb-16 transition-all duration-1000 ${
+                    className={`text-center mb-16 transition-all duration-1000 ${
                         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
                     }`}
                 >
                     <div className="inline-block mb-4">
-            <span
-                className="font-mono text-primary text-xs sm:text-sm glass-effect-strong px-4 py-2 rounded-full neon-border pulse-glow">
+            <span className="font-mono text-primary text-sm glass-effect px-4 py-2 rounded-full neon-border">
               // Portfolio Showcase
             </span>
                     </div>
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent relative">
+                    <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent relative">
                         Featured Projects
                         <div
                             className="absolute -inset-2 bg-gradient-to-r from-primary/10 to-secondary/10 blur-xl opacity-50 animate-pulse"></div>
                     </h2>
-                    <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
-                        Real-world applications showcasing scalable architecture and clean code principles
-                    </p>
+                    {/*<p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">*/}
+                    {/*    Real-world applications showcasing scalable architecture and clean code principles*/}
+                    {/*</p>*/}
                 </div>
 
-                {/* Enhanced projects grid */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
-                    {projects.map((project, index) => (
+                {/* Featured Projects Grid */}
+                <div className="grid lg:grid-cols-2 gap-8">
+                    {featuredProjects.map((project, index) => (
                         <Card
                             key={index}
-                            className={`group overflow-hidden border-0 glass-effect-strong neon-border hover:shadow-2xl transition-all transform hover:scale-[1.02] ${
+                            className={`group overflow-hidden border-0 glass-effect-strong neon-border hover:shadow-2xl transition-all duration-500 transform hover:scale-[1.02] ${
                                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-                            } ${index % 2 === 0 ? "slide-in-left" : "slide-in-right"}`}
-                            style={{transitionDelay: `${index * 0.2}s`}}
+                            }`}
+                            style={{animationDelay: `${index * 0.2}s`}}
                             onMouseEnter={() => setActiveProject(index)}
                             onMouseLeave={() => setActiveProject(null)}
                         >
@@ -170,80 +174,75 @@ export function Projects() {
                                     <img
                                         src={project.image || "/placeholder.svg"}
                                         alt={project.title}
-                                        className="w-full h-full object-cover transition-transform group-hover:scale-110"
+                                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                     />
                                     <div
-                                        className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                        className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-                                    {/* Enhanced project stats overlay */}
+                                    {/* Project stats overlay */}
                                     <div className="absolute top-4 right-4 flex gap-2">
-                                        <Badge variant="secondary"
-                                               className="glass-effect-strong neon-border animate-pulse">
+                                        <Badge variant="secondary" className="glass-effect neon-border">
                                             {project.status}
                                         </Badge>
-                                        <Badge
-                                            variant="outline"
-                                            className="glass-effect-strong neon-border text-primary border-primary/50 animate-pulse"
-                                            style={{animationDelay: "1.5s"}}
-                                        >
+                                        <Badge variant="outline"
+                                               className="glass-effect neon-border text-primary border-primary/50">
                                             {project.category}
                                         </Badge>
                                     </div>
 
-                                    {/* Enhanced GitHub stats */}
+                                    {/* GitHub stats */}
                                     <div
-                                        className="absolute bottom-4 left-4 flex gap-3 sm:gap-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                                        className="absolute bottom-4 left-4 flex gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                         <div
-                                            className="flex items-center gap-1 text-white text-xs sm:text-sm glass-effect-strong px-2 py-1 rounded neon-border">
-                                            <Star className="h-3 w-3 sm:h-4 sm:w-4 text-yellow-400 animate-pulse"/>
+                                            className="flex items-center gap-1 text-white text-sm glass-effect px-2 py-1 rounded">
+                                            <Star className="h-4 w-4 text-yellow-400"/>
                                             {project.stats.stars}
                                         </div>
                                         <div
-                                            className="flex items-center gap-1 text-white text-xs sm:text-sm glass-effect-strong px-2 py-1 rounded neon-border">
-                                            <GitFork className="h-3 w-3 sm:h-4 sm:w-4 text-blue-400 animate-pulse"/>
+                                            className="flex items-center gap-1 text-white text-sm glass-effect px-2 py-1 rounded">
+                                            <GitFork className="h-4 w-4 text-blue-400"/>
                                             {project.stats.forks}
                                         </div>
                                         <div
-                                            className="flex items-center gap-1 text-white text-xs sm:text-sm glass-effect-strong px-2 py-1 rounded neon-border">
-                                            <Eye className="h-3 w-3 sm:h-4 sm:w-4 text-green-400 animate-pulse"/>
+                                            className="flex items-center gap-1 text-white text-sm glass-effect px-2 py-1 rounded">
+                                            <Eye className="h-4 w-4 text-green-400"/>
                                             {project.stats.watchers}
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <CardHeader className="p-4 sm:p-6 relative">
+                            <CardHeader className="relative">
                                 <div
-                                    className="absolute -inset-1 bg-gradient-to-r from-primary/10 to-secondary/10 blur-lg opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                    className="absolute -inset-1 bg-gradient-to-r from-primary/10 to-secondary/10 blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                 <CardTitle
-                                    className="text-lg sm:text-xl text-foreground group-hover:text-primary transition-colors relative z-10">
+                                    className="text-xl text-foreground group-hover:text-primary transition-colors relative z-10">
                                     {project.title}
                                 </CardTitle>
-                                <CardDescription className="text-sm sm:text-base text-muted-foreground relative z-10">
+                                <CardDescription className="text-base text-muted-foreground relative z-10">
                                     {activeProject === index ? project.longDescription : project.description}
                                 </CardDescription>
                             </CardHeader>
 
-                            <CardContent className="p-4 sm:p-6 pt-0 relative">
-                                <div className="flex flex-wrap gap-2 mb-4 sm:mb-6">
+                            <CardContent className="relative">
+                                <div className="flex flex-wrap gap-2 mb-6">
                                     {project.technologies.map((tech, techIndex) => (
                                         <Badge
                                             key={techIndex}
                                             variant="outline"
-                                            className="glass-effect-strong neon-border hover:bg-primary/10 hover:border-primary/50 transition-all text-xs shimmer"
-                                            style={{animationDelay: `${techIndex * 0.1}s`}}
+                                            className="glass-effect neon-border hover:bg-primary/10 hover:border-primary/50 transition-all duration-300"
                                         >
                                             {tech}
                                         </Badge>
                                     ))}
                                 </div>
 
-                                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                                <div className="flex gap-4">
                                     <Button
                                         variant="outline"
                                         size="sm"
                                         asChild
-                                        className="group/btn glass-effect-strong neon-border hover:bg-primary/10 hover:border-primary/50 transition-all bg-transparent w-full sm:w-auto pulse-glow"
+                                        className="group/btn glass-effect neon-border hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 bg-transparent"
                                     >
                                         <Link href={project.github}>
                                             <Github className="mr-2 h-4 w-4 group-hover/btn:animate-spin"/>
@@ -254,11 +253,11 @@ export function Projects() {
                                         <Button
                                             size="sm"
                                             asChild
-                                            className="spring-gradient hover:shadow-lg hover:shadow-primary/25 transition-all w-full sm:w-auto pulse-glow"
+                                            className="spring-gradient hover:shadow-lg hover:shadow-primary/25 transition-all duration-300"
                                         >
                                             <Link href={project.demo}>
                                                 <ExternalLink className="mr-2 h-4 w-4"/>
-                                                Visit
+                                                Demo
                                             </Link>
                                         </Button>
                                     )}
@@ -268,13 +267,12 @@ export function Projects() {
                     ))}
                 </div>
 
-                {/* Enhanced view all button */}
-                <div className="text-center mt-8 sm:mt-12">
+                {/* View All Projects Button */}
+                <div className="text-center mt-12">
                     <Button
                         variant="outline"
                         size="lg"
-                        className="glass-effect-strong neon-border hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 transform hover:scale-105 bg-transparent pulse-glow scale-in"
-                        style={{animationDelay: "1s"}}
+                        className="glass-effect-strong neon-border hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 transform hover:scale-105 bg-transparent"
                     >
                         View All Projects
                         <ExternalLink className="ml-2 h-5 w-5"/>

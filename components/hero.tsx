@@ -8,24 +8,33 @@ import Link from "next/link"
 export function Hero() {
     const [currentText, setCurrentText] = useState("")
     const [currentIndex, setCurrentIndex] = useState(0)
+    const [isDeleting, setIsDeleting] = useState(false)
 
-    const texts = ["Spring Boot Developer", "Microservices Architect", "Java Developer", "Backend Engineer"]
+    const texts = ["Spring Boot Developer", "Java Developer", "Backend Engineer"]
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            const current = texts[currentIndex]
-            if (currentText.length < current.length) {
-                setCurrentText(current.substring(0, currentText.length + 1))
-            } else {
-                setTimeout(() => {
-                    setCurrentText("")
-                    setCurrentIndex((prev) => (prev + 1) % texts.length)
-                }, 2000)
-            }
-        }, 100)
+        const timeout = setTimeout(
+            () => {
+                const current = texts[currentIndex]
 
-        return () => clearInterval(interval)
-    }, [currentText, currentIndex, texts])
+                if (isDeleting) {
+                    setCurrentText(current.substring(0, currentText.length - 1))
+                    if (currentText === "") {
+                        setIsDeleting(false)
+                        setCurrentIndex((prev) => (prev + 1) % texts.length)
+                    }
+                } else {
+                    setCurrentText(current.substring(0, currentText.length + 1))
+                    if (currentText === current) {
+                        setTimeout(() => setIsDeleting(true), 2000)
+                    }
+                }
+            },
+            isDeleting ? 50 : 100,
+        )
+
+        return () => clearTimeout(timeout)
+    }, [currentText, currentIndex, isDeleting, texts])
 
     return (
         <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">

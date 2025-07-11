@@ -84,9 +84,9 @@ export function Skills() {
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                         Skills & Expertise
                     </h2>
-                    <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
-                        A comprehensive toolkit for building enterprise-grade backend systems
-                    </p>
+                    {/*<p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">*/}
+                    {/*    A comprehensive toolkit for building enterprise-grade backend systems*/}
+                    {/*</p>*/}
                 </div>
 
                 {/* Responsive skills grid */}
