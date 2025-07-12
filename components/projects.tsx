@@ -49,9 +49,9 @@ export function Projects() {
         {
             title: "Buhothy",
             description:
-                "A website for gulf students that enables them to order educational researches based on specific requests. Users can make payments for their orders, and the payment method is implemented using Laravel, JavaScript, and Stripe.",
+                "A website tailored for Gulf students, enabling them to order educational research based on specific requests. The platform includes a payment system for processing orders and an admin dashboard for managing user interactions and content.",
             longDescription:
-                "A user-friendly website tailored for Gulf students, enabling them to order educational research based on specific requests. The platform includes a payment system for processing orders and an admin dashboard for managing user interactions and content.",
+                "A website tailored for Gulf students, enabling them to order educational research based on specific requests. The platform includes a payment system for processing orders and an admin dashboard for managing user interactions and content.",
             technologies: ["Laravel", "MVC", "PHP", "JavaScript", "Bootstrap", "Git", "Stripe", "MySQL"],
             github: "https://github.com/baselbashir1/Bhoothat-Website",
             url: "https://buhothy.com/en",
@@ -63,12 +63,12 @@ export function Projects() {
             buttonText: "Visit"
         },
         {
-            title: "Akrab Elik Mobile Application",
+            title: "Akrab Elik Application",
             description:
                 "A mobile application that provides real-time support, enables activation and cancellation of services, bundles, and offers (minutes and internet), delivers customer usage insights, facilitates payments via Syriatel Cash, and allows users to register complaints (e.g., coverage issues). It is complemented by a web-based control panel that empowers the marketing team to efficiently manage services, monitor customer activity, and enhance engagement.",
             longDescription:
                 "A mobile application that provides real-time support, enables activation and cancellation of services, bundles, and offers (minutes and internet), delivers customer usage insights, facilitates payments via Syriatel Cash, and allows users to register complaints (e.g., coverage issues). It is complemented by a web-based control panel that empowers the marketing team to efficiently manage services, monitor customer activity, and enhance engagement.",
-            technologies: ["Spring Boot", "Java", "Microservices", "RabbitMQ", "Redis", "Docker", "Kubernetes", "GitLab CI/CD", "Grafana", "Promethus", ".NET Framework", "PLSQL", "Oracle Database"],
+            technologies: ["Spring Boot", "Java", "Microservices", "RabbitMQ", "Redis", "Docker", "Kubernetes", "GitLab", "CI/CD", "Grafana", "Prometheus", ".NET Framework", "PLSQL", "Oracle Database"],
             image: "",
             stats: {stars: 5, forks: 0, watchers: 10},
             status: "Production",
@@ -77,12 +77,12 @@ export function Projects() {
             buttonText: "Download App"
         },
         {
-            title: "Bulk Messaging System - BMS",
+            title: "Bulk Messaging System",
             description:
                 "A messaging platform that enables companies and third parties to send SMS messages to their customers through BMS. It serves media companies, universities, financial institutions, and brands, helping them streamline communication, outreach, and customer engagement.",
             longDescription:
                 "A messaging platform that enables companies and third parties to send SMS messages to their customers through BMS. It serves media companies, universities, financial institutions, and brands, helping them streamline communication, outreach, and customer engagement.",
-            technologies: ["Spring Boot", "Java", "Microservices", "RabbitMQ", "Docker", "PLSQL", "Oracle Database"],
+            technologies: ["Spring Boot", "Java", "Microservices", "RabbitMQ", "Apache Camel", "Docker", "PLSQL", "Oracle Database"],
             image: "",
             stats: {stars: 5, forks: 0, watchers: 10},
             status: "Production",
@@ -145,6 +145,66 @@ export function Projects() {
             technologies: ["Laravel", "MVC", "PHP", "JavaScript", "Bootstrap", "Stripe", "Firebase", "Git", "MySQL"],
             github: "https://github.com/baselbashir1/Laravel_Ecommerce",
             image: "/images/hyperx.png",
+            stats: {stars: 0, forks: 0, watchers: 0},
+            status: "Test",
+            category: "Full Stack",
+            featured: false,
+            buttonText: "Demo"
+        },
+        {
+            title: "Invoices Management System",
+            description:
+                "Laravel project dashboard for a debt collection system used by companies responsible for collecting debts on behalf of banks.",
+            longDescription:
+                "Laravel project dashboard for a debt collection system used by companies responsible for collecting debts on behalf of banks.",
+            technologies: ["Laravel", "MVC", "PHP", "JavaScript", "Bootstrap", "Firebase", "Git", "MySQL"],
+            github: "https://github.com/baselbashir1/Invoices-Management-System",
+            image: "/images/invoices1.jpg",
+            stats: {stars: 0, forks: 0, watchers: 0},
+            status: "Test",
+            category: "Full Stack",
+            featured: false,
+            buttonText: "Demo"
+        },
+        {
+            title: "LaraGigs",
+            description:
+                "A Laravel-based community platform for sharing job opportunities, showcasing projects, and fostering collaboration among developers and professionals.",
+            longDescription:
+                "A Laravel-based community platform for sharing job opportunities, showcasing projects, and fostering collaboration among developers and professionals.",
+            technologies: ["Laravel", "MVC", "PHP", "JavaScript", "Bootstrap", "Git", "MySQL"],
+            github: "https://github.com/baselbashir1/LaraGigs",
+            image: "/images/laragigs.jpg",
+            stats: {stars: 0, forks: 0, watchers: 0},
+            status: "Test",
+            category: "Full Stack",
+            featured: false,
+            buttonText: "Demo"
+        },
+        {
+            title: "Glasses Store",
+            description:
+                "Glasses store dashboard using Laravel and JavaScript DOM. It creates a file for every customer, which contains their purchase history and invoices, and also allows for the management of products and client details.",
+            longDescription:
+                "Glasses store dashboard using Laravel and JavaScript DOM. It creates a file for every customer, which contains their purchase history and invoices, and also allows for the management of products and client details.",
+            technologies: ["Laravel", "MVC", "PHP", "JavaScript", "Bootstrap", "Git", "MySQL"],
+            github: "https://github.com/baselbashir1/LaraGigs",
+            image: "/images/glasses2.jpg",
+            stats: {stars: 0, forks: 0, watchers: 0},
+            status: "Test",
+            category: "Full Stack",
+            featured: false,
+            buttonText: "Demo"
+        },
+        {
+            title: "Travels",
+            description:
+                "Java web project using Java servlets and JSP for adding and modifying available travel options.",
+            longDescription:
+                "Java web project using Java servlets and JSP for adding and modifying available travel options.",
+            technologies: ["Java", "MVC", "JSP", "JavaScript", "Bootstrap", "Git", "MySQL"],
+            github: "https://github.com/baselbashir1/Travels",
+            image: "/images/travels.jpg",
             stats: {stars: 0, forks: 0, watchers: 0},
             status: "Test",
             category: "Full Stack",

@@ -36,13 +36,12 @@ export function Experience() {
                 "Responsible for developing new applications and enhancing existing ones, focusing on performance, scalability, and bug resolution.",
             achievements: [
                 "Developed and maintained microservices architecture using Java Spring Boot to enhance system modularity and scalability.",
-                "Designed and implemented RESTful APIs to support seamless communication between microservices.",
+                "Designed and implemented APIs to support seamless communication between microservices.",
                 "Improved application performance and reliability through rigorous testing, debugging, and optimization.",
                 "Collaborated with cross-functional teams to gather requirements and deliver software solutions that meet business needs.",
-                "Worked on database design, development, and optimization to ensure data integrity and performance.",
-                "Managed the deployment and configuration of applications in production environments.",
+                "Worked on database design, development, and optimization to ensure data integrity and performance."
             ],
-            technologies: ["Java", "Spring Boot", "Microservices", "RabbitMQ", "Docker", "Kubernetes", "GitLab", "CI/CD", "Redis", "Grafana", "Promethus", "Oracle Database", "Sonarqube", "Git", "Firebase"],
+            technologies: ["Spring Boot", "Java", "Microservices", ".NET Framework", "C#", "RabbitMQ", "Docker", "Kubernetes", "GitLab", "CI/CD", "Redis", "Grafana", "Prometheus", "Oracle Database", "SonarQube", "Firebase"],
         },
         {
             title: "DevOps & Operations Specialist",
@@ -52,15 +51,12 @@ export function Experience() {
             description:
                 "Implementing DevOps involves setting up infrastructure and pipelines for multiple programming languages. Containerized applications and databases using Docker to improve workflows and deployments.",
             achievements: [
-                "Preparing the infrastructure to implement the concept of DevOps.",
-                "Developing new pipelines for multiple programming languages to ensure a successful (CI/CD) process.",
-                "Automating and improving development and release processes.",
-                "Developing new software to meet business requirements.",
-                "Database developments and enhancements.",
-                "Managing the deployment process for all new systems or new releases of existing ones.",
-                "Initializing the production environment and implementing all necessary configurations on databases and servers.",
+                "Designed and managed CI/CD pipelines for multi-language environments, improving deployment speed and reliability.",
+                "Containerized applications and databases using Docker and Kubernetes to streamline workflows and enhance scalability.",
+                "Implemented system monitoring and logging solutions with Prometheus and Grafana for proactive issue resolution.",
+                "Provided operational support for software systems, including database development, optimization, and ongoing enhancements.",
             ],
-            technologies: ["DevOps", "Docker", "Java", "PHP", "Git", "Sonarqube", "RabbitMQ", "Oracle Database", "SQL Server", "MySQl"],
+            technologies: ["DevOps", "Docker", "Java", "PHP", "RabbitMQ", "GitLab", "CI/CD", "Grafana", "Prometheus", "SonarQube", "Oracle Database", "SQL Server", "MySQl"],
         },
         {
             title: "Software Engineer",
@@ -70,7 +66,8 @@ export function Experience() {
             description:
                 "Worked extensively on SEO and WordPress, optimizing websites for search engines by implementing on-page SEO strategies, enhancing site structure, refining meta tags, and integrating schema markup to improve visibility and ranking. Managed technical SEO aspects,including site speed optimization, structured data implementation, and ensuring mobile-friendliness for an improved user experience. And, utilized industry-leading tools such as GoogleAnalytics, Google Search Console, and Yoast SEO to monitor performance and refine strategies based on data-driven insights.",
             achievements: [
-                "Optimized WordPress site for SEO-friendly content and seamless performance, ensuring adherence to best practices for improved rankings.",
+                "Led SEO and WordPress optimization to improve site structure, speed, and mobile responsiveness.",
+                "Integrated schema markup and optimized content for higher search rankings.",
                 "Enhanced user engagement through strategic keyword optimization, structured content, and continuous performance improvements.",
             ],
             technologies: ["SEO", "WordPress", "SEMrush", "PageSpeed Insights", "Google Search Console", "Google Analytics", "Yoast SEO", "MySQL"],
@@ -101,7 +98,7 @@ export function Experience() {
             location: "Tartus, Syria",
             period: "Aug 2023 - Sep 2023",
             description:
-                "Developed new applications using PHP and Laravel framework.",
+                "Developed Laravel-based applications with REST APIs for service management and e-commerce solutions. Streamlined client and request management through intuitive admin dashboards.",
             achievements: [
                 "Developed an application enabling clients to request home maintenance services and set their location to find the nearest service. The application supports multi-authentication for clients and maintenance personnel and includes an admin dashboard for managing requests and users.",
                 "Created a dashboard for registering and managing client files, including details of their purchase history. The system streamlines client management and enhances customer service capabilities.",

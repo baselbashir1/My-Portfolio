@@ -29,34 +29,86 @@ export function Skills() {
         {
             title: "Core Java & Spring",
             icon: "☕",
-            skills: ["Java", "Spring Boot", "Spring Security", "Spring Data JPA", "Spring Cloud", "Hibernate", "WebSocket"],
+            skills: [
+                "Java",
+                "Spring Boot",
+                "Spring Security",
+                "Spring Data JPA",
+                "Spring Cloud",
+                "Hibernate",
+                "WebSocket"
+            ],
         },
         {
             title: "Microservices & Architecture",
             icon: "🏗️",
-            skills: ["Microservices Design", "RESTful APIs", "GraphQL", "Event-Driven Architecture", "API Gateway", "Keycloak", "Zookeeper", "Zipkin"],
+            skills: [
+                "Microservices Design",
+                "RESTful APIs",
+                "GraphQL",
+                "Event-Driven Architecture",
+                "API Gateway",
+                "Apache Kafka",
+                "RabbitMQ",
+                "CQRS",
+                "Keycloak",
+                "Zookeeper",
+                "Zipkin",
+                "Apache Camel"
+            ],
         },
         {
             title: "Databases & Storage",
             icon: "🗄️",
-            skills: ["Oracle Database", "SQL Server", "PostgreSQL", "MySQL", "MongoDB", "Redis", "Database Design"],
+            skills: [
+                "Oracle Database",
+                "SQL Server",
+                "PostgreSQL",
+                "MySQL",
+                "MongoDB",
+                "Redis",
+                "Database Design"
+            ],
         },
         {
             title: "DevOps & Cloud",
             icon: "☁️",
-            skills: ["Docker", "Kubernetes", "AWS", "Jenkins", "GitLab CI/CD", "Prometheus", "Grafana"],
-        },
-        {
-            title: "Message Queues & Streaming",
-            icon: "📡",
-            skills: ["Apache Kafka", "RabbitMQ", "Redis Pub/Sub", "CQRS", "Zookeeper"],
+            skills: [
+                "Docker",
+                "Kubernetes",
+                "Cloud Native",
+                "GitLab",
+                "AWS",
+                "CI/CD",
+                "Prometheus",
+                "Grafana"
+            ],
         },
         {
             title: "Testing & Quality",
             icon: "🧪",
-            skills: ["JUnit 5", "Mockito", "TestContainers", "Integration Testing", "SonarQube"],
+            skills: [
+                "JUnit 5",
+                "Mockito",
+                "TestContainers",
+                "Integration Testing",
+                "SonarQube"
+            ],
         },
-    ]
+        {
+            title: "SEO & Analytics",
+            icon: "📈",
+            skills: [
+                "SEO",
+                "SEMrush",
+                "Ahrefs",
+                "PageSpeed Insights",
+                "Google Search Console",
+                "Google Analytics",
+                "Yoast SEO"
+            ],
+        },
+    ];
 
     return (
         <section ref={sectionRef} id="skills" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 relative">
