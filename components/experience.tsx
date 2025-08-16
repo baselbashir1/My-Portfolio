@@ -35,13 +35,14 @@ export function Experience() {
             description:
                 "Responsible for developing new applications and enhancing existing ones, focusing on performance, scalability, and bug resolution.",
             achievements: [
-                "Developed and maintained microservices architecture using Java Spring Boot to enhance system modularity and scalability.",
-                "Designed and implemented APIs to support seamless communication between microservices.",
-                "Improved application performance and reliability through rigorous testing, debugging, and optimization.",
-                "Collaborated with cross-functional teams to gather requirements and deliver software solutions that meet business needs.",
-                "Worked on database design, development, and optimization to ensure data integrity and performance."
+                "Designed, developed, and optimized high-performance Spring Boot microservices handling millions of requests per second in production.",
+                "Built REST APIs enabling efficient, scalable communication across distributed systems.",
+                "Integrated RabbitMQ for reliable, asynchronous event-driven processing.",
+                "Implemented Redis caching and database optimizations (SQL & NoSQL) to improve response times and reduce load.",
+                "Managed Docker-based CI/CD deployments, ensuring smooth, automated releases to production.",
+                "Monitored system health and performance using Prometheus and Grafana, proactively resolving bottlenecks."
             ],
-            technologies: ["Spring Boot", "Java", "Microservices", ".NET Framework", "C#", "RabbitMQ", "Docker", "Kubernetes", "GitLab", "CI/CD", "Redis", "Grafana", "Prometheus", "Oracle Database", "SonarQube", "Firebase"],
+            technologies: ["Java", "Spring Boot", "Microservices", "RabbitMQ", "DevOps", "Docker", "Kubernetes", "GitLab CI/CD", "Redis", "Grafana", "Prometheus", "SonarQube", "Firebase", "Apache Camel", "C#", ".NET Framework", "PLSQL", "Oracle Database"],
         },
         {
             title: "DevOps & Operations Specialist",
@@ -51,12 +52,13 @@ export function Experience() {
             description:
                 "Implementing DevOps involves setting up infrastructure and pipelines for multiple programming languages. Containerized applications and databases using Docker to improve workflows and deployments.",
             achievements: [
-                "Designed and managed CI/CD pipelines for multi-language environments, improving deployment speed and reliability.",
-                "Containerized applications and databases using Docker and Kubernetes to streamline workflows and enhance scalability.",
-                "Implemented system monitoring and logging solutions with Prometheus and Grafana for proactive issue resolution.",
-                "Provided operational support for software systems, including database development, optimization, and ongoing enhancements.",
+                "Built and optimized CI/CD pipelines for multiple programming languages, enabling efficient DevOps workflows.",
+                "Automated development, release, and deployment processes to improve delivery speed and reliability.",
+                "Developed and enhanced software solutions and databases to meet evolving business needs.",
+                "Managed production environment setup, including server and database configurations.",
+                "Monitored, identified, and resolved technical issues to maintain system stability."
             ],
-            technologies: ["DevOps", "Docker", "Java", "PHP", "RabbitMQ", "GitLab", "CI/CD", "Grafana", "Prometheus", "SonarQube", "Oracle Database", "SQL Server", "MySQl"],
+            technologies: ["DevOps", "Docker", "GitLab CI/CD", "Java", "PHP", "RabbitMQ", "Grafana", "Prometheus", "SonarQube", "PLSQL", "Oracle Database", "SQL Server", "MySQl"],
         },
         {
             title: "Software Engineer",
@@ -73,7 +75,7 @@ export function Experience() {
             technologies: ["SEO", "WordPress", "SEMrush", "PageSpeed Insights", "Google Search Console", "Google Analytics", "Yoast SEO", "MySQL"],
         },
         {
-            title: "Full Stack Developer",
+            title: "Full Stack Developer - Freelance",
             company: "Wareed",
             location: "Damascus, Syria",
             period: "Aug 2024 - Nov 2024",
@@ -83,7 +85,7 @@ export function Experience() {
             technologies: ["Laravel", "Vue.js", "PHP", "JavaScript", "Bootstrap", "Git", "MySQL"],
         },
         {
-            title: "Full Stack Developer",
+            title: "Full Stack Developer - Freelance",
             company: "Leading Cities",
             location: "Riyadh, Saudi Arabia",
             period: "Aug 2023 - Jan 2024",

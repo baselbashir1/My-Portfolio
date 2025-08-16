@@ -126,7 +126,7 @@ export function About() {
                         {/*          </h3>*/}
                         <div className="space-y-4 sm:space-y-6 text-muted-foreground leading-relaxed">
                             <p className="text-base sm:text-lg fade-in-up" style={{animationDelay: "0.5s"}}>
-                                My journey began with a simple{" "}
+                                My journey started with a simple{" "}
                                 <code
                                     className="glass-effect-strong text-primary px-2 sm:px-3 py-1 rounded font-mono text-xs sm:text-sm neon-border break-all shimmer">
                                     System.out.println("Hello World");
@@ -136,8 +136,8 @@ export function About() {
                             <p className="text-sm sm:text-base fade-in-up" style={{animationDelay: "0.7s"}}>
                                 With over <strong className="text-primary">3 years</strong> of hands-on experience in
                                 enterprise
-                                software development, I specialize in crafting robust backend systems using the{" "}
-                                <strong className="text-primary">Spring Boot ecosystem</strong>.
+                                software development, I specialize in designing and building scalable, high-performance backend systems using{" "}
+                                <strong className="text-primary">Java, Spring Boot, and distributed architectures</strong>.
                             </p>
                             <p className="text-sm sm:text-base fade-in-up" style={{animationDelay: "0.9s"}}>
                                 I'm passionate about writing <strong className="text-secondary">clean, maintainable

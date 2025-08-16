@@ -48,13 +48,13 @@ export function Skills() {
                 "GraphQL",
                 "Event-Driven Architecture",
                 "API Gateway",
+                "CQRS",
                 "Apache Kafka",
                 "RabbitMQ",
-                "CQRS",
+                "Apache Camel",
                 "Keycloak",
                 "Zookeeper",
-                "Zipkin",
-                "Apache Camel"
+                "Zipkin"
             ],
         },
         {
@@ -67,25 +67,24 @@ export function Skills() {
                 "MySQL",
                 "MongoDB",
                 "Redis",
-                "Database Design"
+                "Database Design & Optimization"
             ],
         },
         {
-            title: "DevOps & Cloud",
+            title: "DevOps, Cloud & Monitoring",
             icon: "☁️",
             skills: [
                 "Docker",
                 "Kubernetes",
-                "Cloud Native",
-                "GitLab",
                 "AWS",
-                "CI/CD",
+                "Cloud-Native Development",
+                "GitLab CI/CD",
                 "Prometheus",
                 "Grafana"
             ],
         },
         {
-            title: "Testing & Quality",
+            title: "Testing & Quality Assurance",
             icon: "🧪",
             skills: [
                 "JUnit 5",

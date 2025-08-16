@@ -68,7 +68,7 @@ export function Projects() {
                 "A mobile application that provides real-time support, enables activation and cancellation of services, bundles, and offers (minutes and internet), delivers customer usage insights, facilitates payments via Syriatel Cash, and allows users to register complaints (e.g., coverage issues). It is complemented by a web-based control panel that empowers the marketing team to efficiently manage services, monitor customer activity, and enhance engagement.",
             longDescription:
                 "A mobile application that provides real-time support, enables activation and cancellation of services, bundles, and offers (minutes and internet), delivers customer usage insights, facilitates payments via Syriatel Cash, and allows users to register complaints (e.g., coverage issues). It is complemented by a web-based control panel that empowers the marketing team to efficiently manage services, monitor customer activity, and enhance engagement.",
-            technologies: ["Spring Boot", "Java", "Microservices", "RabbitMQ", "Redis", "Docker", "Kubernetes", "GitLab", "CI/CD", "Grafana", "Prometheus", ".NET Framework", "PLSQL", "Oracle Database"],
+            technologies: ["Java", "Spring Boot", "Microservices", "RabbitMQ", "Redis", "Docker", "Kubernetes", "GitLab CI/CD", "Prometheus", "Grafana", "C#", ".NET Framework", "PLSQL", "Oracle Database"],
             image: "",
             stats: {stars: 5, forks: 0, watchers: 10},
             status: "Production",
@@ -82,7 +82,7 @@ export function Projects() {
                 "A messaging platform that enables companies and third parties to send SMS messages to their customers through BMS. It serves media companies, universities, financial institutions, and brands, helping them streamline communication, outreach, and customer engagement.",
             longDescription:
                 "A messaging platform that enables companies and third parties to send SMS messages to their customers through BMS. It serves media companies, universities, financial institutions, and brands, helping them streamline communication, outreach, and customer engagement.",
-            technologies: ["Spring Boot", "Java", "Microservices", "RabbitMQ", "Apache Camel", "Docker", "PLSQL", "Oracle Database"],
+            technologies: ["Java", "Spring Boot", "Microservices", "RabbitMQ", "Apache Camel", "Docker", "C#", ".NET Framework", "PLSQL", "Oracle Database"],
             image: "",
             stats: {stars: 5, forks: 0, watchers: 10},
             status: "Production",
