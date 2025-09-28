@@ -182,7 +182,7 @@ export function About() {
                                 className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 xl:w-[28rem] xl:h-[28rem] rounded-full overflow-hidden neon-border glass-effect-strong group-hover:scale-105 transition-all duration-700">
                                 {/* Replace this placeholder with your actual photo */}
                                 <Image
-                                    src="/images/my-pic.jpg"
+                                    src="/images/my-pic.png"
                                     alt="Basel - Spring Boot Developer"
                                     width={450}
                                     height={450}

@@ -28,37 +28,21 @@ export function Experience() {
 
     const experiences = [
         {
-            title: "Software Developer Specialist",
+            title: "Software Engineer",
             company: "Syriatel Mobile Telecom",
             location: "Damascus, Syria",
-            period: "Oct 2023 - Present",
+            period: "Sep 2022 - Present",
             description:
-                "Responsible for developing new applications and enhancing existing ones, focusing on performance, scalability, and bug resolution.",
+                "Responsible for developing new applications and enhancing existing ones, focusing on performance, scalability, and bug resolution. Implementing DevOps involves setting up infrastructure and pipelines for multiple programming languages. Containerized applications and databases using Docker to improve workflows and deployments.",
             achievements: [
-                "Designed, developed, and optimized high-performance Spring Boot microservices handling millions of requests per second in production.",
-                "Built REST APIs enabling efficient, scalable communication across distributed systems.",
-                "Integrated RabbitMQ for reliable, asynchronous event-driven processing.",
-                "Implemented Redis caching and database optimizations (SQL & NoSQL) to improve response times and reduce load.",
-                "Managed Docker-based CI/CD deployments, ensuring smooth, automated releases to production.",
-                "Monitored system health and performance using Prometheus and Grafana, proactively resolving bottlenecks."
+                "Designed and implemented scalable enterprise applications with Spring Boot, secured APIs, and microservices architecture.",
+                "Built and optimized CI/CD pipelines for multi-language environments, automating build, release, and deployment processes to improve delivery speed, reliability, and consistency.",
+                "Containerized and deployed applications and databases using Docker, improving deployment speed, scalability, and reliability.",
+                "Developed and optimized databases, focusing on performance tuning, query optimization, and infrastructure scalability.",
+                "Implemented monitoring and observability tools (Grafana, Prometheus) for system health, performance tracking, troubleshooting, and maintaining high availability.",
+                "Managed production environments, servers, and database infrastructure to support business-critical applications."
             ],
             technologies: ["Java", "Spring Boot", "Microservices", "RabbitMQ", "DevOps", "Docker", "Kubernetes", "GitLab CI/CD", "Redis", "Grafana", "Prometheus", "SonarQube", "Firebase", "Apache Camel", "C#", ".NET Framework", "PLSQL", "Oracle Database"],
-        },
-        {
-            title: "DevOps & Operations Specialist",
-            company: "Syriatel Mobile Telecom",
-            location: "Damascus, Syria",
-            period: "Sep 2022 - Sep 2023",
-            description:
-                "Implementing DevOps involves setting up infrastructure and pipelines for multiple programming languages. Containerized applications and databases using Docker to improve workflows and deployments.",
-            achievements: [
-                "Built and optimized CI/CD pipelines for multiple programming languages, enabling efficient DevOps workflows.",
-                "Automated development, release, and deployment processes to improve delivery speed and reliability.",
-                "Developed and enhanced software solutions and databases to meet evolving business needs.",
-                "Managed production environment setup, including server and database configurations.",
-                "Monitored, identified, and resolved technical issues to maintain system stability."
-            ],
-            technologies: ["DevOps", "Docker", "GitLab CI/CD", "Java", "PHP", "RabbitMQ", "Grafana", "Prometheus", "SonarQube", "PLSQL", "Oracle Database", "SQL Server", "MySQl"],
         },
         {
             title: "Software Engineer",
@@ -75,24 +59,14 @@ export function Experience() {
             technologies: ["SEO", "WordPress", "SEMrush", "PageSpeed Insights", "Google Search Console", "Google Analytics", "Yoast SEO", "MySQL"],
         },
         {
-            title: "Full Stack Developer - Freelance",
-            company: "Wareed",
-            location: "Damascus, Syria",
-            period: "Aug 2024 - Nov 2024",
+            title: "Full Stack Developer",
+            company: "Freelance",
+            location: "Remote",
+            period: "Aug 2023 - Present",
             description:
-                "Developed a responsive medical website in partnership with Wareed, providing users with an intuitive platform to view and search for doctors, book appointments within specified timeframes, and access additional services. A dedicated dashboard allows doctors to manage appointments and other essential controls.",
+                "Delivered full-stack web solutions with scalable backend systems and user-friendly dashboards. Focused on secure payment integrations and responsive design for client platforms.",
             achievements: [],
-            technologies: ["Laravel", "Vue.js", "PHP", "JavaScript", "Bootstrap", "Git", "MySQL"],
-        },
-        {
-            title: "Full Stack Developer - Freelance",
-            company: "Leading Cities",
-            location: "Riyadh, Saudi Arabia",
-            period: "Aug 2023 - Jan 2024",
-            description:
-                "Developed a user-friendly website tailored for Gulf students, enabling them to order educational research based on specific requests. The platform includes a payment system for processing orders and an admin dashboard for managing user interactions and content.",
-            achievements: [],
-            technologies: ["Laravel", "MVC", "PHP", "JavaScript", "Bootstrap", "Git", "Stripe", "MySQL"],
+            technologies: ["Laravel", "Vue.js", "PHP", "JavaScript", "Bootstrap", "Git", "Stripe", "MySQL"],
         },
         {
             title: "Back End Developer - Internship",
