@@ -28,7 +28,7 @@ export function Experience() {
 
     const experiences = [
         {
-            title: "Software Engineer",
+            title: "Software Development Specialist",
             company: "Syriatel Mobile Telecom",
             location: "Damascus, Syria",
             period: "Sep 2022 - Present",
@@ -47,10 +47,10 @@ export function Experience() {
         {
             title: "Software Engineer",
             company: "Elev8xr",
-            location: "Toronto, Canada",
+            location: "Toronto, Canada - Remote",
             period: "Nov 2024 - Feb 2025",
             description:
-                "Worked extensively on SEO and WordPress, optimizing websites for search engines by implementing on-page SEO strategies, enhancing site structure, refining meta tags, and integrating schema markup to improve visibility and ranking. Managed technical SEO aspects,including site speed optimization, structured data implementation, and ensuring mobile-friendliness for an improved user experience. And, utilized industry-leading tools such as GoogleAnalytics, Google Search Console, and Yoast SEO to monitor performance and refine strategies based on data-driven insights.",
+                "Specialized in SEO and WordPress optimization, focusing on on-page strategies, technical enhancements, and data-driven performance improvements. Experienced in optimizing site structure, meta tags, and schema markup, while ensuring fast, mobile-friendly, and user-centric websites. Proficient in leveraging tools like Google Analytics, Google Search Console, and Yoast SEO for continuous monitoring and optimization.",
             achievements: [
                 "Led SEO and WordPress optimization to improve site structure, speed, and mobile responsiveness.",
                 "Integrated schema markup and optimized content for higher search rankings.",
@@ -59,19 +59,9 @@ export function Experience() {
             technologies: ["SEO", "WordPress", "SEMrush", "PageSpeed Insights", "Google Search Console", "Google Analytics", "Yoast SEO", "MySQL"],
         },
         {
-            title: "Full Stack Developer",
-            company: "Freelance",
-            location: "Remote",
-            period: "Aug 2023 - Present",
-            description:
-                "Delivered full-stack web solutions with scalable backend systems and user-friendly dashboards. Focused on secure payment integrations and responsive design for client platforms.",
-            achievements: [],
-            technologies: ["Laravel", "Vue.js", "PHP", "JavaScript", "Bootstrap", "Git", "Stripe", "MySQL"],
-        },
-        {
             title: "Back End Developer - Internship",
             company: "Golden Soft",
-            location: "Tartus, Syria",
+            location: "Tartus, Syria - Remote",
             period: "Aug 2023 - Sep 2023",
             description:
                 "Developed Laravel-based applications with REST APIs for service management and e-commerce solutions. Streamlined client and request management through intuitive admin dashboards.",
