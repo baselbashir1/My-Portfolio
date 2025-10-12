@@ -194,7 +194,7 @@ export function Hero() {
                             className="group border-primary text-primary hover:bg-primary hover:text-black transition-all duration-300 transform hover:scale-105 glow-effect bg-transparent neon-border w-full sm:w-auto"
                             onClick={() => {
                                 const link = document.createElement('a');
-                                link.href = 'https://drive.google.com/file/d/1DlXvKf-8DnbSiDhq-T41x6aMV8yPvxDd/view?usp=sharing';
+                                link.href = 'https://drive.google.com/file/d/1EZstpG1SEe0nyKmN2iwv6P-o6ry-AHts/view?usp=drive_link';
                                 link.download = 'mhd_basel_bashir_resume.pdf';
                                 document.body.appendChild(link);
                                 link.click();
